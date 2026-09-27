@@ -1,12 +1,42 @@
 # Grants and awards, newest first.
-# Renders "{year} {name}, {organization} ({purpose})"; purpose and amount are optional.
+# Renders "{role}; PI: {pi}. {title}. {name}, {organization}, {amount}, {purpose} ({start}–{end})."
+#
+# id:           unique slug
+# type:         grant (project funding) | travel (travel/meeting support) | award (prize, fellowship, honor)
+# name, organization: required
+# start, end:   YYYY or YYYY-MM; end omitted = single year/date (a one-time award)
+# role:         your role, printed first, e.g. "Team member (lab design advisor)";
+#               omit for awards you received outright
+# pi:           "Surname, I." when someone else leads; "Steinmetz, A." (or role: PI) when it's you
+# title:        project title, for grants
+# amount:       number in USD, printed as "$21,250"
+# purpose:      what it funded, e.g. "travel to *Event name*, City, Country"
+# url:          announcement/program page, printed as a "Link"
+# footnotes:    ids from footnotes.yml
+# show: false hides an entry everywhere
+# Inline markup: *italic*
 
-- year: 2023
+- id: gt-provost-tli-2026
+  type: grant
+  role: Team member (lab design advisor)
+  pi: Sell, P.
+  title: Creating an Introductory Astronomy Course
+  name: Provost Teaching and Learning Initiative Grant
+  organization: Georgia Institute of Technology
+  amount: 21250          # award letter; the proposal asked for $15,000, then the College of Science funded a full GTA
+  start: 2026
+  end: 2027
+
+- id: epj-young-researcher-2023
+  type: travel
   name: Young Researcher Meeting Grant
   organization: European Physical Journal (EPJ), Springer-Verlag
-  purpose: PP2023
+  purpose: travel to *Margaret Island Symposium on Particles & Plasmas (PP2023)*, Budapest, Hungary
+  start: 2023
 
-- year: 2023
+- id: ua-fanfare-2023
+  type: travel
   name: Fanfare Graduate Travel Award
   organization: University of Arizona
-  purpose: PP2023, ELI-Beamlines
+  purpose: travel to *Margaret Island Symposium on Particles & Plasmas (PP2023)*, Budapest, Hungary, and *ELI-Beamlines Strong Fields Frontiers*, Prague, Czech Republic
+  start: 2023

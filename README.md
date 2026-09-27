@@ -64,7 +64,7 @@ outputs:
   - Markdown/HTML: `<!-- BEGIN GENERATED: name -->` … `<!-- END GENERATED: name -->`
   - LaTeX: `% BEGIN GENERATED: name` … `% END GENERATED: name`
 - The renderer (`tex`, `md`, or `html`) is inferred from the output's extension; set `kind:` to override.
-- Templates get the data files as variables (`publications`, `talks`, `profile`, ...), plus `pubs` (visible publications grouped by type), `pubs_all`, and the renderers `r` (output format) and `h` (HTML fragments).
+- Templates get the data files as variables (`publications`, `talks`, `profile`, ...), plus `pubs` (visible publications grouped by type), `pubs_all`, `awards_all` (visible grants and awards), `awards_by_type`, and the renderers `r` (output format) and `h` (HTML fragments).
 
 ### Adding a consumer (e.g., a grant or promotion package)
 

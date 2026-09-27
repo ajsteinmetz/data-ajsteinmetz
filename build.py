@@ -37,6 +37,7 @@ SELF = "Steinmetz, A."
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December"]
 SEASONS = {"Spring": 0, "Summer": 1, "Fall": 2}
+AWARD_TYPES = ("grant", "travel", "award")
 
 TEX_CHARS = {
     "\\": r"\textbackslash{}", "&": r"\&", "%": r"\%", "$": r"\$", "#": r"\#",
@@ -360,10 +361,26 @@ class Renderer:
         name = ", ".join(self.text(x) for x in [s["role"], s["body"], s.get("unit")] if x)
         return f"{name} ({self.span(s['start'], s.get('end'))})"
 
+    def money(self, n):
+        """21250 -> '$21,250' (USD)."""
+        return self.esc(f"${n:,}")
+
     def award(self, a):
-        s = f"{a['year']} {self.text(a['name'])}, {self.text(a['organization'])}"
-        extra = ", ".join(self.text(x) for x in [a.get("amount"), a.get("purpose")] if x)
-        return f"{s} ({extra})" if extra else s
+        """'Role; PI: Sell, P. Title. Name, Org, $21,250, purpose (2026–2027). Link.'"""
+        role, pi = a.get("role"), a.get("pi")
+        if pi == SELF:
+            role, pi = role or "PI", None
+        people = "; ".join(x for x in [self.text(role) if role else None,
+                                       f"PI: {self.authors(pi)}" if pi else None] if x)
+        body = ", ".join(x for x in [
+            self.text(a["name"]) + self.fn(a.get("footnotes")),
+            self.text(a["organization"]),
+            self.money(a["amount"]) if a.get("amount") else None,
+            self.text(a["purpose"]) if a.get("purpose") else None,
+        ] if x)
+        when = self.span(a["start"], a.get("end", a["start"]), self.mon_year)
+        return self.sentences([people, self.text(a["title"]) if a.get("title") else None,
+                               f"{body} ({when})", self.link("Link", a["url"]) if a.get("url") else None])
 
     def outreach(self, o):
         return (f"{self.bold(self.esc(SELF))} {self.date_apa(o['date'])}. "
@@ -391,6 +408,12 @@ def load_data():
     data["pubs"] = {t: [p for p in pubs if p["type"] == t]
                     for t in ("journal", "chapter", "report", "in-prep", "dissertation")}
     data["pubs_all"] = pubs
+    for a in data["awards"]:
+        if a["type"] not in AWARD_TYPES:
+            raise ValueError(f"{a['id']}: unknown award type {a['type']!r}")
+    awards = [a for a in data["awards"] if a.get("show", True)]
+    data["awards_by_type"] = {t: [a for a in awards if a["type"] == t] for t in AWARD_TYPES}
+    data["awards_all"] = awards
     data["teaching_groups"] = {g["id"]: g for g in data["teaching"]["groups"]}
     for g in data["teaching"]["groups"]:
         for c in g["courses"]:
