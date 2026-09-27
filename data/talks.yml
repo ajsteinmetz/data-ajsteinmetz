@@ -1,0 +1,132 @@
+# Conference presentations and talks, newest first within each list.
+#
+# authors:   semicolon-separated; "Steinmetz, A." is bolded automatically
+# presenter: author marked "(presenter)"; omit when Steinmetz presented
+# event:     italicized; host and place follow it
+# date:      YYYY-MM-DD, or YYYY-MM when the day is unknown
+
+presented:
+  - authors: Steinmetz, A.
+    title: Impact of AI on Education and Professional Careers
+    event: GRIT
+    place: Tampa, FL
+    date: 2025-10-16
+    note: Invited talk (honorarium)
+    doi: 10.13140/RG.2.2.28318.60486
+
+  - authors: Steinmetz, A.
+    title: Physics Lab, Journal Club, and AI Tools
+    event: Cross College Faculty Forum (CCFF)
+    host: Arizona College of Technology, Hebei University of Technology
+    place: Tianjin, China
+    date: 2025-04-11
+
+  - authors: Steinmetz, A.
+    title: UA-HEBUT Pedagogical Adventures
+    event: Cross College Faculty Forum (CCFF)
+    host: Arizona College of Technology, Hebei University of Technology
+    place: Tianjin, China
+    date: 2024-11-15
+
+  - authors: Steinmetz, A.; Yang, C. T.; Rafelski, J.
+    title: Primordial Cosmic Magnetism
+    event: SMT 30th Anniversary Steward Observatory Symposium
+    host: University of Arizona
+    place: Tucson, AZ
+    date: 2023-09-22
+    doi: 10.13140/RG.2.2.19213.24806
+
+  - authors: Steinmetz, A.; Yang, C. T.; Rafelski, J.
+    title: Magnetism in the Cosmic Plasma Epoch
+    event: ELI-Beamlines Strong Fields Frontiers
+    host: The Extreme Light Infrastructure ERIC
+    place: Prague, Czech Republic
+    date: 2023-06-13
+    doi: 10.13140/RG.2.2.32635.02087
+
+  - authors: Steinmetz, A.; Yang, C. T.; Rafelski, J.
+    title: Magnetism in the Cosmic Plasma Epoch
+    event: Margaret Island Symposium on Particles & Plasmas (PP2023)
+    host: HUN-REN Wigner Research Centre for Physics
+    place: Budapest, Hungary
+    date: 2023-06-08
+    doi: 10.13140/RG.2.2.29279.57762
+
+  - authors: Steinmetz, A.
+    title: Relativistic Two-Body Quantum Mechanics
+    host: University of Arizona
+    place: Tucson, AZ
+    date: 2017-03
+
+co_prepared:
+  - authors: Rafelski, J.; Yang, C. T.; Steinmetz, A.
+    presenter: Rafelski, J.
+    title: Non-Stationary Quark-gluon Plasma in the Universe
+    event: Hungarian-German WE-Heraeus Seminar
+    place: Goerlitz & HZDR Dresden, Germany
+    date: 2025-06-24
+    doi: 10.13140/RG.2.2.21726.75844
+
+  - authors: Rafelski, J.; Yang, C. T.; Steinmetz, A.
+    presenter: Rafelski, J.
+    title: Thermal Non-equilibrium and Quark-gluon Plasma
+    event: Joint European Thermodynamics Conference (JETC 2025)
+    place: Belgrade, Serbia
+    date: 2025-05-28
+    doi: 10.13140/RG.2.2.25443.05922
+
+  - authors: Rafelski, J.; Birrell, J.; Grayson, C.; Steinmetz, A.; Yang, C. T.; Foster, S.
+    presenter: Rafelski, J.
+    title: "Quarks to Cosmos: Particles and Plasma in Cosmological Evolution"
+    event: 16th Conference on Quark Confinement and the Hadron Spectrum (QCHSC 2024)
+    host: University of Adelaide
+    place: Cairns, Australia
+    date: 2024-08-09
+    doi: 10.13140/RG.2.2.19642.30407
+
+  - authors: Rafelski, J.; Yang, C. T.; Birrell, J.; Grayson, C.; Foster, S.; Steinmetz, A.
+    presenter: Rafelski, J.
+    title: Particles & Plasmas in the First Hour of the Universe
+    event: Particles & Plasmas Symposium (PP2024)
+    host: HUN-REN Wigner Research Centre for Physics
+    place: Budapest, Hungary
+    date: 2024-06-11
+    doi: 10.13140/RG.2.2.22997.74727
+
+  - authors: Rafelski, J.; Steinmetz, A.
+    presenter: Rafelski, J.
+    title: Space-time, Acceleration and Matter
+    host: The Extreme Light Infrastructure ERIC
+    place: Prague, Czech Republic
+    date: 2022-12
+    doi: 10.13140/RG.2.2.25933.76001
+
+  - authors: Rafelski, J.; Yang, C. T.; Birrell, J.; Grayson, C.; Steinmetz, A.
+    presenter: Rafelski, J.
+    title: Particles and Plasmas in the Universe
+    event: 22nd Zimányi School Winter Workshop on Heavy Ion Physics
+    host: HUN-REN Wigner Research Centre for Physics
+    place: Budapest, Hungary
+    date: 2022-12
+    doi: 10.13140/RG.2.2.27611.48160
+
+  - authors: Rafelski, J.; Steinmetz, A.
+    presenter: Rafelski, J.
+    title: "Strong Field Physics: Report on Frankfurt School and Current Arizona Effort"
+    event: Margaret Island Symposium on Particles & Plasmas (PP2022)
+    host: HUN-REN Wigner Research Centre for Physics
+    place: Budapest, Hungary
+    date: 2022-05-17
+    doi: 10.13140/RG.2.2.13363.13600
+
+# "In addition, I have closely collaborated on preparing research and academic talks delivered at ..."
+collaborated:
+  - Deutsche Elektronen-Synchrotron/DESY (2024)
+  - Margaret Island Symposium on Particles & Plasmas (PP2023)
+  - Polish Academy of Sciences at Warsaw University (2023)
+  - XI International Conference on New Frontiers in Physics (ICNFP 2022)
+  - University of Arizona (2022)
+  - Hungarian Academy of Sciences (2022)
+  - Institute of Theoretical Physics Uniwersytet Wrocławski (2022)
+  - 21st Zimányi School Winter Workshop on Heavy Ion Physics (2021)
+  - 4th LeCosPA Symposium (2021)

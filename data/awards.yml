@@ -1,0 +1,12 @@
+# Grants and awards, newest first.
+# Renders "{year} {name}, {organization} ({purpose})"; purpose and amount are optional.
+
+- year: 2023
+  name: Young Researcher Meeting Grant
+  organization: European Physical Journal (EPJ), Springer-Verlag
+  purpose: PP2023
+
+- year: 2023
+  name: Fanfare Graduate Travel Award
+  organization: University of Arizona
+  purpose: PP2023, ELI-Beamlines

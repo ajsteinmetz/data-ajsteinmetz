@@ -1,0 +1,51 @@
+# Contact details, links, and one-off CV content.
+
+name: Andrew James Steinmetz
+credential: Ph.D.
+updated: 2026-09          # drives "Last Updated September 2026" on the CV and "Updated Sep 2026" on the website
+email: ajsteinmetz511@gmail.com
+phone: (520) 989-1305
+website: https://ajsteinmetz.github.io/
+orcid: 0000-0001-5474-2649
+cv_pdf: https://github.com/ajsteinmetz/cv-ajsteinmetz/raw/main/cv_ajsteinmetz.pdf
+
+metrics:
+  citations: 144
+  h_index: 8
+  source: Google Scholar
+  as_of: 2026-09
+
+links:
+  scholar: https://scholar.google.com/citations?user=fJBK1GIAAAAJ
+  inspire: https://inspirehep.net/authors/1796313
+  arxiv: https://arxiv.org/a/steinmetz_a_1.html
+  github: https://github.com/ajsteinmetz
+
+# "Other Links and Websites" table on the website CV
+professional_links:
+  - {label: GT Faculty Page, url: https://physics.gatech.edu/user/andrew-steinmetz}
+  - {label: GitHub, url: https://github.com/ajsteinmetz}
+  - {label: LinkedIn, url: https://www.linkedin.com/in/ajsteinmetz/}
+social_links:
+  - {label: Bluesky, url: https://bsky.app/profile/ajsteinmetz.com}
+  - {label: AstroBin, url: https://www.astrobin.com/users/djinn/}
+  - {label: Wikipedia Userpage, url: https://en.wikipedia.org/wiki/User:CosmologicalDefect}
+
+erdos:
+  number: 5
+  source: https://mathscinet.ams.org/mathscinet/freetools/collab-dist?source=1443426&target=189017
+
+research_interests:
+  - label: Relativistic Spin Dynamics
+    text: Exploring non-minimal (and nonlinear) electromagnetism (EM) in quantum mechanics utilizing the Klein-Gordon-Pauli (KGP) equation, or classically via modifying the covariant Thomas-Bargmann-Michel-Telegdi (TBMT) torque equation.
+  - label: Neutrino Physics
+    text: EM mixing of neutrino flavor through transition magnetic dipole moments as a possible probe of the hierarchy problem. Exploring possible EM-induced neutrino mass splitting.
+  - label: Cosmic Magnetization
+    text: Magnetized spin-polarized thermal plasmas during the electron-positron and quark-gluon-plasma (QGP) epochs as a possible origin of primordial magnetic fields (PMF).
+
+# Short labels in the "Key:" line of the teaching sections
+institution_key:
+  - {key: GT, name: Georgia Tech}
+  - {key: UA, name: University of Arizona}
+  - {key: ACT, name: "Arizona College of Technology, Hebei University of Technology", short: Arizona College of Tech.}
+  - {key: PCC, name: Pima Community College}

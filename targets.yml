@@ -1,0 +1,5 @@
+# Consumer repos, as folder names next to this repo (override the parent with --repos).
+# Each one has _build/build.yml listing its outputs; missing repos are skipped with a warning.
+- cv-ajsteinmetz
+- ajsteinmetz.github.io
+- ajsteinmetz

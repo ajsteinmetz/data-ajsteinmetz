@@ -1,0 +1,25 @@
+# Academic service and associations. end omitted = present; end == start prints a single year.
+
+institutional:
+  - {role: Member, body: Academic Faculty Advisory Council (AFAC), unit: "College of Science, GT", start: 2026}
+  - {role: Member, body: Academic Program Committee, unit: "School of Physics, GT", start: 2026}
+  - {role: Member, body: Undergraduate Advising and Assessment Committee, unit: "School of Physics, GT", start: 2026}
+  - {role: Associate, body: Designated Campus Colleague (DCC), unit: "Department of Physics, UA", start: 2025}
+  - {role: Member, body: Faculty Search Committee(s), unit: "Department of Physics, UA", start: 2024, end: 2025}
+
+professional:
+  - {role: Mentor, body: Wildcat Mentor Society, unit: UA, start: 2025, end: 2026}
+  - {role: Fellow, body: Career Mentoring Fellows Program, unit: APS, start: 2025}
+  - {role: Organizer, body: Undergraduate Journal Club, unit: ACT/HEBUT, start: 2025, end: 2025}
+  - {role: Member, body: American Physical Society (APS), start: 2025}
+  - {role: Member, body: Cross College Faculty Forum (CCFF), unit: ACT/HEBUT, start: 2024, end: 2025}
+
+reviewer:
+  - Physical Review Letters
+  - Physical Review D
+  - Physical Review Research
+  - European Physical Journal Plus
+  - Modern Physics Letters A
+  - International Journal of Modern Physics A
+  - Frontiers in Physics
+  - ICPMS 2025

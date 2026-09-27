@@ -1,0 +1,18 @@
+# Degrees, newest first. footnotes attach to the institution cell.
+
+- degree: Ph.D.
+  field: Physics
+  institution: University of Arizona
+  footnotes: [ua-gta, ua-gra]
+  date: 2023-12
+
+- degree: B.S.
+  field: Physics
+  institution: University of Arizona
+  footnotes: [atlas-tech]
+  date: 2014-05
+
+- degree: B.S.
+  field: Chemical Engineering
+  institution: University of Arizona
+  date: 2014-05

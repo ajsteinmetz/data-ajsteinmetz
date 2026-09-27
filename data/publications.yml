@@ -1,0 +1,244 @@
+# Publications, newest first across all types. Each CV/website section keeps this order.
+#
+# type:     journal | chapter (book chapters & review articles) | report | in-prep | dissertation
+# authors:  semicolon-separated; "Steinmetz, A." is bolded automatically
+# status:   submitted (renders "Submitted to *venue*") | in-press (renders "*venue*, in press")
+# volume + pages|article -> "*Venue* 234, 2919–2929 (2025)"; pages without volume -> "*Venue*, pp. 269–284 (2024)"
+# report/dissertation: venue is free text printed before the year
+# Identifiers (all optional, printed in this order): doi, hdl, url, arxiv, repo
+# altmetric_id: overrides the DOI for the website's Altmetric badge
+# show: false hides an entry everywhere
+# Inline markup: *italic*
+
+- id: fusion-insights
+  type: journal
+  authors: Rafelski, J.; Steinmetz, A.
+  title: "Science of Nuclear Fusion: Insights and Ideas"
+  venue: Particles
+  status: in-press
+  year: 2026
+  arxiv: "2609.01366"
+  repo: fusion-insights
+
+- id: short-note-qgp
+  type: journal
+  authors: Steinmetz, A.; Rafelski, J.
+  title: Short note on spin magnetization in QGP
+  venue: Eur. Phys. J. Spec. Top.
+  volume: 234
+  pages: 2919–2929
+  year: 2025
+  doi: 10.1140/epjs/s11734-025-01625-9
+  arxiv: "2502.05052"
+  repo: short-note-qgp
+
+- id: quarks-to-cosmos
+  type: chapter
+  authors: Rafelski, J.; Birrell, J.; Grayson, C.; Steinmetz, A.; Yang, C. T.
+  title: "Quarks to Cosmos: Particles and plasma in cosmological evolution"
+  venue: Eur. Phys. J. Spec. Top.
+  volume: 234
+  pages: 1125–1329
+  year: 2025
+  doi: 10.1140/epjs/s11734-025-01470-w
+  arxiv: "2409.19031"
+  repo: thesis-collab-project
+
+- id: fermi-distribution
+  type: journal
+  authors: Birrell, J.; Formanek, M.; Steinmetz, A.; Yang, C. T.; Rafelski, J.
+  title: "Fermi-Dirac Integrals in Degenerate Regimes: Novel Asymptotic Expansion"
+  venue: Int. J. Theor. Phys.
+  volume: 63
+  article: 163
+  year: 2024
+  doi: 10.1007/s10773-024-05695-8
+  arxiv: "2405.05287"
+  repo: fermi-distribution
+
+- id: fritzsch-manuscript
+  type: chapter
+  authors: Rafelski, J.; Steinmetz, A.; Yang, C. T.
+  title: Dynamic Flavor Mixing Through Transition Moments
+  venue: Harald Fritzsch Memorial Volume
+  pages: 269–284
+  year: 2024
+  doi: 10.1142/9789811292279_0015
+  arxiv: "2309.15797"   # shared with the IJMPA article (INSPIRE lists both DOIs under this e-print)
+  repo: fritzsch-manuscript
+
+- id: neutrino-transition-moments
+  type: journal
+  authors: Rafelski, J.; Steinmetz, A.; Yang, C. T.
+  title: Dynamic fermion flavor mixing through transition dipole moments
+  venue: Int. J. Mod. Phys. A
+  volume: 38
+  article: 2350163
+  year: 2023
+  doi: 10.1142/S0217751X23501634
+  arxiv: "2309.15797"
+  repo: neutrino-transition-moments
+
+- id: plasma-partition
+  type: journal
+  authors: Steinmetz, A.; Yang, C. T.; Rafelski, J.
+  title: Matter-antimatter origin of cosmic magnetism
+  venue: Phys. Rev. D
+  volume: 108
+  article: 123522
+  year: 2023
+  doi: 10.1103/PhysRevD.108.123522
+  arxiv: "2308.14818"
+  repo: plasma-partition
+
+- id: a-short-survey
+  type: chapter
+  authors: Rafelski, J.; Birrell, J.; Steinmetz, A.; Yang, C. T.
+  title: A Short Survey of Matter-Antimatter Evolution in the Primordial Universe
+  venue: Universe
+  volume: 9
+  article: 309
+  year: 2023
+  doi: 10.3390/universe9070309
+  arxiv: "2305.09055"
+  repo: a-short-survey
+  altmetric_id: 148440866
+
+- id: thesis-ajsteinmetz
+  type: dissertation
+  authors: Steinmetz, A.
+  title: Modern Topics in Relativistic Spin Dynamics and Magnetism
+  venue: Ph.D. dissertation, University of Arizona, Tucson, AZ
+  year: 2023
+  hdl: 10150/670301
+  arxiv: "2310.07193"
+  repo: thesis-ajsteinmetz
+  altmetric_id: 155328339
+  committee:
+    - {name: Johann Rafelski, role: Chair}
+    - {name: Shufang Su, role: Member}
+    - {name: John Rutherfoord, role: Member}
+    - {name: Stefan Meinel, role: Member}
+    - {name: Sean Fleming, role: Member}
+  presentation_doi: 10.13140/RG.2.2.24323.27689
+
+- id: motion-plane-wave
+  type: journal
+  authors: Formanek, M.; Steinmetz, A.; Rafelski, J.
+  title: Motion of classical charged particles with magnetic moment in external plane-wave electromagnetic fields
+  venue: Phys. Rev. A
+  volume: 103
+  article: "052218"
+  year: 2021
+  doi: 10.1103/PhysRevA.103.052218
+  arxiv: "2103.02594"
+
+- id: radiation-reaction-friction
+  type: journal
+  authors: Formanek, M.; Steinmetz, A.; Rafelski, J.
+  title: "Radiation reaction friction: Resistive material medium"
+  venue: Phys. Rev. D
+  volume: 102
+  article: "056015"
+  year: 2020
+  doi: 10.1103/PhysRevD.102.056015
+  arxiv: "2004.09634"
+
+- id: neutral-particle-plane-wave
+  type: journal
+  authors: Formanek, M.; Steinmetz, A.; Rafelski, J.
+  title: Classical neutral point particle in linearly polarized EM plane wave field
+  venue: Plasma Phys. Control. Fusion
+  volume: 61
+  article: "084006"
+  year: 2019
+  doi: 10.1088/1361-6587/ab242e
+  arxiv: "1904.10587"
+
+- id: magnetic-dipole-moment
+  type: journal
+  authors: Steinmetz, A.; Formanek, M.; Rafelski, J.
+  title: Magnetic dipole moment in relativistic quantum mechanics
+  venue: Eur. Phys. J. A
+  volume: 55
+  article: 40
+  year: 2019
+  doi: 10.1140/epja/i2019-12715-5
+  arxiv: "1811.06233"
+  repo: magnetic-dipole-moment
+
+- id: strong-fields-neutral
+  type: journal
+  authors: Formanek, M.; Evans, S.; Rafelski, J.; Steinmetz, A.; Yang, C. T.
+  title: Strong fields and neutral particle magnetic moment dynamics
+  venue: Plasma Phys. Control. Fusion
+  volume: 60
+  article: "074006"
+  year: 2018
+  doi: 10.1088/1361-6587/aac06a
+  arxiv: "1712.07698"
+
+- id: point-magnetic-moment
+  type: journal
+  authors: Rafelski, J.; Formanek, M.; Steinmetz, A.
+  title: Relativistic dynamics of point magnetic moment
+  venue: Eur. Phys. J. C
+  volume: 78
+  article: 6
+  year: 2018
+  doi: 10.1140/epjc/s10052-017-5493-2
+  arxiv: "1712.01825"
+
+# --- Institutional & technical reports ---
+
+- id: oae-outcomes
+  type: report
+  authors: Steinmetz, A.
+  title: Physics Degree Outcomes from OAE Survey Data
+  venue: Internal report (School of Physics), Georgia Institute of Technology, Atlanta, GA
+  year: 2026
+
+- id: phys-381-382-outlook
+  type: report
+  authors: Steinmetz, A.
+  title: "Status and Outlook of PHYS 381/382: Methods in Experimental Physics I/II at ACT/HEBUT"
+  venue: Internal report (curricular and equipment proposal; $36,000), University of Arizona, Tucson, AZ
+  year: 2025
+
+- id: atlas-large-eta
+  type: report
+  authors: ATLAS Collaboration
+  coauthor: true   # renders "ATLAS Collaboration (coauthor: Steinmetz, A.)"
+  title: Large Eta Task Force Report
+  venue: ATL-UPGRADE-INT-2015-001, CERN, Geneva, Switzerland
+  year: 2015
+  url: https://cds.cern.ch/record/2020591
+
+# --- Works in progress ---
+
+- id: strong-fields-review
+  type: in-prep
+  authors: Steinmetz, A.; Labun, L.; Formanek, M.; Grayson, C.; Price, W.; Yang, C. T.; Rafelski, J.
+  title: Strong fields in classical and quantum physics
+  year: 2026
+
+- id: heavy-quark-plasma
+  type: in-prep
+  show: false
+  authors: Steinmetz, A.; Rafelski, J.
+  title: Magnetized primordial heavy-quark plasma
+  year: 2026
+
+- id: dipole-cp-violation
+  type: in-prep
+  show: false
+  authors: Steinmetz, A.; Yang, C. T.; Rafelski, J.
+  title: Electromagnetic field forcing of dynamic CP-violation in lepton sector
+  year: 2026
+
+- id: qcd-vacuum-amm
+  type: in-prep
+  show: false
+  authors: Evans, S.; Steinmetz, A.
+  title: Anomalous magnetic moment in the QCD vacuum
+  year: 2026

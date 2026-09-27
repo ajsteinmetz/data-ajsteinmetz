@@ -1,0 +1,30 @@
+# Employment, newest first. end omitted = present.
+# *_short fields are used by the PDF CV, where table columns are narrow.
+
+- title: Academic Professional
+  department: School of Physics
+  institution: Georgia Institute of Technology
+  start: 2026-01
+
+- title: Global Professor
+  footnotes: [joint-appointment]
+  department: Arizona College of Technology
+  department_short: Arizona College of Tech.
+  institution: Hebei University of Technology
+  start: 2024-02
+  end: 2025-06
+
+- title: Global Professor
+  footnotes: [joint-appointment]
+  department: Department of Physics
+  department_short: Dept. of Physics
+  institution: University of Arizona
+  start: 2023-11
+  end: 2025-06
+
+- title: Adjunct Faculty
+  department: Physics & Astronomy Department
+  department_short: Physics/Astronomy Dept.
+  institution: Pima Community College
+  start: 2020-06
+  end: 2023-12

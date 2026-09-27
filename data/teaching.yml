@@ -1,0 +1,69 @@
+# Teaching record, one group per institution/role, courses newest first.
+#
+# key:            short institution label (see "Key" line on the CV and teaching page)
+# role:           Instructor-of-Record | Teaching Assistant
+# summary_heading: heading used where the CV condenses this group into one line
+# Course fields:
+#   summary:   label used when condensing (defaults to title); courses sharing a label merge,
+#              e.g. PHY 121IN + PHY 122IN -> "Intro. Physics I/II (2020–2021, 2023)"
+#   estimated: true prints students as "Est. N"
+#   footnotes: ids from footnotes.yml
+
+groups:
+  - id: gt
+    key: GT
+    role: Instructor-of-Record
+    courses:
+      - {code: PHYS 4321/2, title: Advanced Lab I/II, delivery: In-person, sections: 2, students: 17, term: Fall 2026}
+      - {code: PHYS 4604, title: Professional Development, delivery: In-person, sections: 1, students: 60, term: Fall 2026}
+      - {code: GT 1000, title: First-Year Seminar, delivery: In-person, sections: 1, students: 15, term: Fall 2026}
+      - {code: PHYS 2212, title: Principles of Physics II, delivery: In-person, sections: 1, students: 163, term: Spring 2026}
+
+  - id: ua-act
+    key: UA/ACT
+    role: Instructor-of-Record
+    courses:
+      - {code: PHYS 371, title: Quantum Theory, delivery: In-person, sections: 1, students: 75, term: Spring 2025}
+      - {code: PHYS 381, title: Methods in Exp. Physics I, delivery: In-person, sections: 2, students: 67, term: Spring 2025}
+      - {code: PHYS 321, title: Theoretical Mechanics, delivery: In-person, sections: 2, students: 139, term: Fall 2024}
+      - {code: PHYS 382, title: Methods in Exp. Physics II, delivery: In-person, sections: 2, students: 46, term: Fall 2024, footnotes: [act-lab, first-offered]}
+      - {code: ENGR 498A, title: Senior Design/Capstone, delivery: In-person, sections: 1, students: 43, term: Fall 2024, footnotes: [act-capstone, first-offered]}
+      - {code: PHYS 240, title: Intro. Electricity & Magnetism, delivery: In-person, sections: 3, students: 203, term: Spring 2024}
+      - {code: PHYS 381, title: Methods in Exp. Physics I, delivery: In-person, sections: 2, students: 50, term: Spring 2024, footnotes: [act-lab, first-offered]}
+
+  - id: pcc
+    key: PCC
+    role: Instructor-of-Record
+    summary_heading: Adjunct Courses at PCC (Physics & Astronomy Dept., as Instructor-of-Record)
+    courses:
+      - {code: AST 101IN, title: The Solar System, delivery: Online, sections: 2, students: 40, term: Fall 2023}
+      - {code: AST 101IN, title: The Solar System, delivery: Online, sections: 1, students: 17, term: Spring 2023}
+      - {code: PHY 122IN, title: Intro. Physics II, summary: Intro. Physics I/II, delivery: Virtual, sections: 1, students: 26, term: Spring 2023}
+      - {code: AST 101IN, title: The Solar System, delivery: Online, sections: 1, students: 15, term: Fall 2022}
+      - {code: PHY 216IN, title: Intro. Electricity & Magnetism, delivery: In-person, sections: 1, students: 18, term: Summer 2022}
+      - {code: AST 101IN, title: The Solar System, delivery: Virtual, sections: 1, students: 17, term: Fall 2021}
+      - {code: PHY 122IN, title: Intro. Physics II, summary: Intro. Physics I/II, delivery: Virtual, sections: 1, students: 28, term: Fall 2021}
+      - {code: AST 101IN, title: The Solar System, delivery: Virtual, sections: 1, students: 18, term: Spring 2021}
+      - {code: AST 101IN, title: The Solar System, delivery: Virtual, sections: 1, students: 24, term: Fall 2020}
+      - {code: PHY 121IN, title: Intro. Physics I, summary: Intro. Physics I/II, delivery: Online, sections: 1, students: 25, term: Fall 2020}
+
+  - id: ua-ta
+    key: UA
+    role: Teaching Assistant
+    summary_heading: TA Courses at UA (Dept. of Physics, Dept. of Chemistry & Biochemistry)
+    courses:
+      - {code: CHEM 164H, title: Honors Gen. Chemistry Lab, summary: General Chemistry I (Honors)/II Lab, delivery: In-person, sections: 1, students: 13, term: Spring 2023}
+      - {code: CHEM 152, title: Gen. Chemistry II Lab, summary: General Chemistry I (Honors)/II Lab, delivery: In-person, sections: 2, students: 50, term: Fall 2022}
+      - {code: CHEM 151, title: Gen. Chemistry I Lab, summary: General Chemistry I (Honors)/II Lab, delivery: In-person, sections: 2, students: 49, term: Spring 2022}
+      - {code: CHEM 151, title: Gen. Chemistry I Lab, summary: General Chemistry I (Honors)/II Lab, delivery: In-person, sections: 2, students: 46, term: Fall 2021}
+      - {code: PHYS 181/2, title: Intro. Physics Lab I/II, summary: Intro. Physics I/II Lab, delivery: Online, sections: 2, students: 40, estimated: true, term: Spring 2020}
+      - {code: PHYS 139, title: Intro. Mechanics I/II Lab, delivery: Online, sections: 1, students: 20, estimated: true, term: Spring 2020}
+      - {code: CHEM 151, title: Gen. Chemistry I Lab, summary: General Chemistry I (Honors)/II Lab, delivery: In-person, sections: 2, students: 47, term: Fall 2019}
+      - {code: PHYS 382, title: Methods in Exp. Physics II, summary: Methods in Exp. Physics I/II, delivery: In-person, sections: 2, students: 13, term: Spring 2019}
+      - {code: PHYS 381, title: Methods in Exp. Physics I, summary: Methods in Exp. Physics I/II, delivery: In-person, sections: 2, students: 28, term: Spring 2019}
+      - {code: PHYS 381, title: Methods in Exp. Physics I, summary: Methods in Exp. Physics I/II, delivery: In-person, sections: 1, students: 19, term: Fall 2018}
+      - {code: PHYS 382, title: Methods in Exp. Physics II, summary: Methods in Exp. Physics I/II, delivery: In-person, sections: 2, students: 17, term: Spring 2018}
+      - {code: PHYS 381, title: Methods in Exp. Physics I, summary: Methods in Exp. Physics I/II, delivery: In-person, sections: 2, students: 13, term: Spring 2018}
+      - {code: PHYS 240, title: Intro. Electricity & Magnetism Lab, delivery: In-person, sections: 1, students: 20, estimated: true, term: Fall 2017}
+      - {code: PHYS 105, title: Intro. to Scientific Computing, delivery: In-person, sections: 1, students: 37, term: Fall 2017}
+      - {code: PHYS 105, title: Intro. to Scientific Computing, delivery: In-person, sections: 1, students: 30, estimated: true, term: Spring 2017}

@@ -1,0 +1,13 @@
+# Footnote text, referenced by id from other data files and templates.
+# Letters (a, b, c, ...) are assigned per output in order of first use, so each
+# document's footnotes stay sequential no matter which items it shows.
+
+joint-appointment: Joint international faculty appointment
+ua-gta: Graduate Teaching Assistant, Dept. of Physics, Dept. of Chem. & Biochem., University of Arizona (2017–2023)
+ua-gra: Graduate Research Assistant, Dept. of Physics, University of Arizona (2015–2017)
+atlas-tech: Research Technician (postbaccalaureate), ATLAS Collaboration, Dept. of Physics, University of Arizona (2014)
+teaching-record: Full teaching record and recent student course evaluations available upon request.
+evaluations: Recent student course evaluations available upon request.
+first-offered: First time offered at this institution. Designed, developed, and delivered curriculum.
+act-lab: Advanced Physics Laboratory (PHYS 381/382), ACT/HEBUT. Developed full-year experimental physics lab curriculum, advising and guidance for the purchasing of over $14,000 USD (¥100,000 RMB) in new equipment, and coordinated instruction for 100+ undergraduate students (2024–2025).
+act-capstone: Senior Design/Capstone (ENGR 498A), ACT/HEBUT. Co-developed a one-semester senior design and career preparation curriculum, and coordinated instruction for 40+ undergraduate students (2024).
