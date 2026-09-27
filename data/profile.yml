@@ -4,7 +4,6 @@ name: Andrew James Steinmetz
 credential: Ph.D.
 updated: 2026-09          # drives "Last Updated September 2026" on the CV and "Updated Sep 2026" on the website
 email: ajsteinmetz511@gmail.com
-phone: (520) 989-1305
 website: https://ajsteinmetz.github.io/
 orcid: 0000-0001-5474-2649
 cv_pdf: https://github.com/ajsteinmetz/cv-ajsteinmetz/raw/main/cv_ajsteinmetz.pdf
@@ -20,12 +19,13 @@ links:
   inspire: https://inspirehep.net/authors/1796313
   arxiv: https://arxiv.org/a/steinmetz_a_1.html
   github: https://github.com/ajsteinmetz
+  linkedin: &linkedin https://www.linkedin.com/in/ajsteinmetz/   # CV header; reused below
 
 # "Other Links and Websites" table on the website CV
 professional_links:
   - {label: GT Faculty Page, url: https://physics.gatech.edu/user/andrew-steinmetz}
   - {label: GitHub, url: https://github.com/ajsteinmetz}
-  - {label: LinkedIn, url: https://www.linkedin.com/in/ajsteinmetz/}
+  - {label: LinkedIn, url: *linkedin}
 social_links:
   - {label: Bluesky, url: https://bsky.app/profile/ajsteinmetz.com}
   - {label: AstroBin, url: https://www.astrobin.com/users/djinn/}

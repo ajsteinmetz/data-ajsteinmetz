@@ -46,6 +46,9 @@ TEX_CHARS = {
     "ö": r"\"{o}", "ő": r"\H{o}", "ü": r"\"{u}", "ł": r"\l{}",
 }
 HTML_NAMED = {"–": "&ndash;", "—": "&mdash;", "¥": "&yen;", "‘": "'", "’": "'", "“": '"', "”": '"'}
+HTML_CHARS = {"&": "&amp;", "<": "&lt;", ">": "&gt;"}  # & only for html: md text already mixes in entities
+MD_SPECIAL = set("\\`*_[]|")                           # backslash-escaped in Markdown text
+MD_URL = {" ": "%20", "(": "%28", ")": "%29", "<": "%3C", ">": "%3E"}
 
 
 # --------------------------------------------------------------------------- dates
@@ -102,8 +105,10 @@ class Renderer:
                 out.append(HTML_NAMED[c])
             elif ord(c) > 127:
                 out.append(f"&#{ord(c)};")
-            elif c == "&" and self.kind == "html":
-                out.append("&amp;")
+            elif c in HTML_CHARS and (c != "&" or self.kind == "html"):
+                out.append(HTML_CHARS[c])
+            elif c in MD_SPECIAL and self.kind == "md":
+                out.append("\\" + c)
             else:
                 out.append(c)
         return "".join(out)
@@ -120,13 +125,13 @@ class Renderer:
     def bold(self, rendered):
         return {"tex": r"\textbf{%s}", "md": "**%s**", "html": "<strong>%s</strong>"}[self.kind] % rendered
 
-    def link(self, rendered, url, breakable=False):
+    def link(self, rendered, url):
         if self.kind == "tex":
             u = url.replace("%", r"\%").replace("#", r"\#")
             return rf"\href{{{u}}}{{{rendered}}}"
         if self.kind == "md":
-            return f"[{rendered}]({url})"
-        return f'<a href="{url.replace("&", "&amp;")}">{rendered}</a>'
+            return f"[{rendered}]({''.join(MD_URL.get(c, c) for c in url)})"
+        return f'<a href="{url.replace("&", "&amp;").replace(chr(34), "&quot;")}">{rendered}</a>'
 
     def ident(self, label, url):
         """Identifier link (DOI, arXiv, ...). In LaTeX, \\nolinkurl lets long ones break at punctuation."""
@@ -146,6 +151,7 @@ class Renderer:
     @staticmethod
     def _plain(rendered):
         s = re.sub(r"\]\([^)]*\)", "]", rendered)           # md link targets
+        s = re.sub(r"\\([^a-zA-Z])", r"\1", s)               # md backslash escapes
         s = re.sub(r"<[^>]+>|\\[a-zA-Z]+|[{}*\[\]]", "", s)  # tags, macros, braces, md emphasis
         return s.rstrip()
 
@@ -161,16 +167,23 @@ class Renderer:
     # ---- dates
 
     def date_long(self, d):
+        """September 27, 2026 / September 2026 / 2026"""
         y, m, day = ym(d)
+        if not m:
+            return str(y)
         return f"{MONTHS[m - 1]} {day}, {y}" if day else f"{MONTHS[m - 1]} {y}"
 
     def date_apa(self, d):
+        """(2026, September 27) / (2026, September) / (2026)"""
         y, m, day = ym(d)
-        return f"({y}, {MONTHS[m - 1]} {day})"
+        if not m:
+            return f"({y})"
+        return f"({y}, {MONTHS[m - 1]} {day})" if day else f"({y}, {MONTHS[m - 1]})"
 
     def mon_year(self, d):
+        """Sep 2026 / 2026"""
         y, m, _ = ym(d)
-        return f"{MONTHS[m - 1][:3]}{self.nbsp()}{y}"
+        return f"{MONTHS[m - 1][:3]}{self.nbsp()}{y}" if m else str(y)
 
     def span(self, start, end=None, fmt=None):
         """Year or month span: 2024--2025, Jan~2026--present, 2025 (start == end)."""
