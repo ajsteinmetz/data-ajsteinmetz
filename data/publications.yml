@@ -194,7 +194,7 @@
 - id: oae-outcomes
   type: report
   authors: Steinmetz, A.
-  title: Physics Degree Outcomes from OAE Survey Data
+  title: Career and Education Outcomes for Georgia Tech Physics Graduates
   venue: Internal report (School of Physics), Georgia Institute of Technology, Atlanta, GA
   year: 2026
 
@@ -218,8 +218,8 @@
 
 - id: strong-fields-review
   type: in-prep
-  authors: Steinmetz, A.; Labun, L.; Formanek, M.; Grayson, C.; Price, W.; Yang, C. T.; Rafelski, J.
-  title: Strong fields in classical and quantum physics
+  authors: Steinmetz, A.; Labun, L.; Formanek, M.; Price, W.; Grayson, C.; Yang, C. T.; Rafelski, J.
+  title: "Particle Dynamics and Radiation in Strong Fields: Classical and Quantum Physics"
   year: 2026
 
 - id: heavy-quark-plasma
