@@ -15,8 +15,10 @@
   authors: Rafelski, J.; Steinmetz, A.
   title: "Science of Nuclear Fusion: Insights and Ideas"
   venue: Particles
-  status: in-press
+  volume: 9
+  article: "94"
   year: 2026
+  doi: 10.3390/particles9040094
   arxiv: "2609.01366"
   repo: fusion-insights
 
