@@ -1,7 +1,7 @@
 # Academic service and associations. end omitted = present; end == start prints a single year.
 
 institutional:
-  - {role: Mentor, body: Academic Professionals and Lecturers (APL) Mentoring Network, unit: "Office of the Vice Provost for Faculty, GT", start: 2026}
+  - {role: Mentor, body: Academic Professionals and Lecturers (APL) Mentoring Network, unit: "Office of Faculty Professional Development, GT", start: 2026}
   - {role: Member, body: Academic Faculty Advisory Council (AFAC), unit: "College of Science, GT", start: 2026}
   - {role: Member, body: Academic Program Committee, unit: "School of Physics, GT", start: 2026}
   - {role: Member, body: Undergraduate Advising and Assessment Committee, unit: "School of Physics, GT", start: 2026}
