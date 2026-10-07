@@ -14,6 +14,7 @@ groups:
     key: GT
     role: Instructor-of-Record
     courses:
+      - {code: PHYS 3209, title: Electronics I, delivery: In-person, sections: 1, students: TBD, term: Spring 2027}
       - {code: PHYS 4321/2, title: Advanced Lab I/II, delivery: In-person, sections: 2, students: 17, term: Fall 2026}
       - {code: PHYS 4604, title: Professional Development, delivery: In-person, sections: 1, students: 60, term: Fall 2026}
       - {code: GT 1000, title: First-Year Seminar, delivery: In-person, sections: 1, students: 15, term: Fall 2026}
